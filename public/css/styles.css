@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+label, input, select {
+    display: block;
+    margin: 2pt 0pt;
+}
+input[type=submit], input[type=button] {
+    float: right;
+}
+#lstUsers {
+    width: 10em;
+}
+#cont_remote, #cont_local {
+    border: 1px solid darkgrey;
+}
+#cont_remote {
+    position: relative;
+    width: calc(480px + 2 * 1px);
+    height: calc(320px + 2 * 1px);
+}
+#cont_local {
+    position: absolute;
+    right: 10pt;
+    bottom: 10pt;
+    width: calc(80px + 2 * 1px);
+    height: calc(60px + 2 * 1px);
+}
+#video_remote, #video_local {
+    width: 100%;
+    height: 100%;
+}
+#btnCancel3 + * {
+    clear: both;
+}
+#messages {
+    clear: both;
+    width: 30em;
+    height: 10em;
+    border: 1px solid lightgrey;
+    padding: 1pt;
+    overflow-y: scroll;
+}
+#messages > div {
+    padding: 2pt;
+    margin: 4pt 0pt;
+    border: 1px solid black;
+    border-radius: 2pt;
+}
+#messages > div.my {
+    margin-left: 40pt;
+}
+#messages p {
+    margin: 2pt 0pt;
+}
+#messages .author {
+    font-weight: bold;
+}
+#messages .datetime {
+    font-size: smaller;
+    text-align: right;
+}
+#txtMessage {
+    width: 22em;
+    height: 6em;
+}
